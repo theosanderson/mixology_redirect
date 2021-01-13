@@ -8,7 +8,13 @@
       redirect=function(){
 var urlParams = new URLSearchParams(window.location.search);
 id =   urlParams.get('recipe')
+        if(id){
 window.location.href = "https://mixology.theo.io/?recipe="+id;
+        }
+        else{
+          window.location.href = "https://mixology.theo.io";
+        }
+        
       }
 
 
