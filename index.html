@@ -5,16 +5,16 @@
   <title>Redirecting</title>
     <script>
 
-      document.onload=function(){
+      redirect=function(){
 var urlParams = new URLSearchParams(window.location.search);
-recipe =   urlParams.get('recipe')
+id =   urlParams.get('recipe')
 window.location.href = "https://mixology.theo.io/?recipe="+id;
       }
 
 
 </script>
 </head>
-<body>
+<body onload="redirect()">
   <h1>Redirecting</h1>
   <p>hang on</p>
 </body>
